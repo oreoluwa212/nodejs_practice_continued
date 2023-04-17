@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Home Page | <%= title %></title>
+</head>
+
+<body>
+   <nav>
+      <a href="/">Home</a>
+      <a href="/sample">Sample</a>
+      <a href="/create">New Blog</a>
+   
+   </nav>
+   <h1>This page is produced by EJS engine</h1>
+   <p>some paragraph here..</p>
+
+   <div class="blogs content">
+      <h2>All Blogs</h2>
+
+      <% if (blogs.length > 0) { %>
+
+         <% blogs.forEach(blog =>{ %>
+
+         <h3 class="title"><%= blog.title %></h3>
+         <p class="snippet"><%= blog.snippet %></p>
+
+         <% }) %>
+
+         <% } %>
+
+   </div>
+
+</body>
+
+</html>

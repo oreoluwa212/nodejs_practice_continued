@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blog | <%= title %></title>
+</head>
+<body>
+   <nav>
+      <div class="site-title">
+         <a href="/">Blog Ninja</a>
+         <p>A Net Ninja Site</p>
+      </div>
+      <ul>
+         <li><a href="/index">Home</a></li>
+         <li><a href="/sample">Sample</a></li>
+         <li><a href="/create">New Blog</a></li>
+      </ul>
+   </nav>
+
+   <div class="create-blog content" style="margin-top: 40px;">
+      <form style="display: grid; padding: 10px;" action="">
+         <label for="title">Blog title</label>
+         <input type="text" id="title" style="width: 40%; margin-top: 5px;">
+         <label for="title">Blog snippet</label>
+         <input type="text" id="snippet" style="width: 40%; margin-top: 5px;">
+         <label for="title">Blog body</label>
+         <textarea name="blog-body" id="body" cols="40px" rows="20px" style="margin-top: 5px;" required></textarea>
+         <button style="width: 80px; height: 30px; background-color: blanchedalmond; color: brown; justify-items: left; border: 1px transparent gainsboro; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 16px; margin-top: 20px;">Submit</button>
+      </form>
+   </div>
+</body>
+</html>
